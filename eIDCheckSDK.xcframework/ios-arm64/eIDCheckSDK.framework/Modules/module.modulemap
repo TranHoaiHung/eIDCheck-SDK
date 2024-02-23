@@ -1,0 +1,11 @@
+framework module eIDCheckSDK {
+  umbrella header "eIDCheckSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module eIDCheckSDK.Swift {
+  header "eIDCheckSDK-Swift.h"
+  requires objc
+}
