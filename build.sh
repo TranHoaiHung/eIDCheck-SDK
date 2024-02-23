@@ -6,7 +6,7 @@ pod lib lint --allow-warnings --no-clean --verbose
 if [ $? -eq 0 ]; then
 	echo "congratulation,pod verifys success! 💐 💐 💐 💐"
 
-	pod trunk push OmiKit.podspec
+	pod trunk push eIDCheckSDK.podspec
 
 	if [ $? -eq 0 ]; then
 		echo "congratulation,pod push to midea-specs success! 💐 💐 💐 💐"
