@@ -7096,8 +7096,8 @@
           },
           {
             "kind": "Function",
-            "name": "scanNFC",
-            "printedName": "scanNFC(mrzKey:)",
+            "name": "parseMRZkey",
+            "printedName": "parseMRZkey(cccdNumber:dateOfBirth:dateOfExpiry:completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7109,11 +7109,112 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:11eIDCheckSDK01eA6ClientC7scanNFC6mrzKeyySS_tF",
-            "mangledName": "$s11eIDCheckSDK01eA6ClientC7scanNFC6mrzKeyySS_tF",
+            "usr": "s:11eIDCheckSDK01eA6ClientC11parseMRZkey10cccdNumber11dateOfBirth0hI6Expiry17completionHandlerySS_10Foundation4DateVAKySDySSypGctF",
+            "mangledName": "$s11eIDCheckSDK01eA6ClientC11parseMRZkey10cccdNumber11dateOfBirth0hI6Expiry17completionHandlerySS_10Foundation4DateVAKySDySSypGctF",
+            "moduleName": "eIDCheckSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scanNFC",
+            "printedName": "scanNFC(mrzKey:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11eIDCheckSDK01eA6ClientC7scanNFC6mrzKey17completionHandlerySS_ySDyS2SGctF",
+            "mangledName": "$s11eIDCheckSDK01eA6ClientC7scanNFC6mrzKey17completionHandlerySS_ySDyS2SGctF",
             "moduleName": "eIDCheckSDK",
             "declAttributes": [
               "AccessControl"
@@ -22060,6 +22161,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "eIDCheckSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CryptoKit",
         "printedName": "CryptoKit",
         "declKind": "Import",
@@ -30182,1975 +30293,2633 @@
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 909,
-      "length": 15,
-      "value": "\"mrz => \""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 923,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 987,
+      "offset": 934,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 1377,
+      "offset": 1324,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 1406,
+      "offset": 1353,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 1412,
+      "offset": 1359,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 1624,
+      "offset": 1571,
       "length": 22,
       "value": "\"Supported - Not done\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 1687,
+      "offset": 1634,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 1736,
+      "offset": 1683,
       "length": 8,
       "value": "\"Failed\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 1785,
+      "offset": 1732,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 1913,
+      "offset": 1860,
       "length": 32,
       "value": "\"SOD - Document Security Object\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 1978,
+      "offset": 1925,
       "length": 30,
       "value": "\"COM - Header and DG Presence\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2041,
+      "offset": 1988,
       "length": 17,
       "value": "\"DG1* - MRZ Info\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2091,
+      "offset": 2038,
       "length": 19,
       "value": "\"DG2* - Face image\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2143,
+      "offset": 2090,
       "length": 21,
       "value": "\"DG3* - Fingerprints\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2197,
+      "offset": 2144,
       "length": 13,
       "value": "\"DG4* - Iris\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2243,
+      "offset": 2190,
       "length": 27,
       "value": "\"DG5* - Displayed portrait\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2303,
+      "offset": 2250,
       "length": 16,
       "value": "\"DG6 - Reserved\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2352,
+      "offset": 2299,
       "length": 18,
       "value": "\"DG7* - Signature\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2403,
+      "offset": 2350,
       "length": 22,
       "value": "\"DG8* - Data features\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2458,
+      "offset": 2405,
       "length": 27,
       "value": "\"DG9* - Structure features\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2519,
+      "offset": 2466,
       "length": 28,
       "value": "\"DG10* - Substance features\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2581,
+      "offset": 2528,
       "length": 34,
       "value": "\"DG11* - Additional personal info\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2649,
+      "offset": 2596,
       "length": 34,
       "value": "\"DG12* - Additional document info\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2717,
+      "offset": 2664,
       "length": 26,
       "value": "\"DG13* - Optional details\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2777,
+      "offset": 2724,
       "length": 25,
       "value": "\"DG14 - Security options\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2836,
+      "offset": 2783,
       "length": 27,
       "value": "\"DG15 - Active Auth PubKey\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2897,
+      "offset": 2844,
       "length": 28,
       "value": "\"DG16 - Person(s) to notify\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 2956,
+      "offset": 2903,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 3712,
+      "offset": 3659,
       "length": 31,
       "value": "\"cccdNumber ===> \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 3742,
+      "offset": 3689,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 3766,
+      "offset": 3713,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 3849,
+      "offset": 3796,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 3876,
+      "offset": 3823,
       "length": 8,
       "value": "\"YYMMdd\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 4354,
+      "offset": 4301,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 4452,
+      "offset": 4399,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "Dictionary",
-      "offset": 4505,
+      "offset": 4452,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 4620,
+      "offset": 4567,
       "length": 8,
       "value": "\"mrzKey\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 4811,
+      "offset": 4758,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "Dictionary",
+      "offset": 5101,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5144,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 5072,
+      "offset": 5167,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5183,
+      "length": 18,
+      "value": "\"wrong_cccdNumber\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5221,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5234,
+      "length": 18,
+      "value": "\"wrong_cccdNumber\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5272,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5282,
+      "length": 5,
+      "value": "\"104\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5324,
+      "length": 8,
+      "value": "\"mrzKey\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5448,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5464,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5486,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5499,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5521,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5531,
+      "length": 5,
+      "value": "\"000\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 5760,
       "length": 12,
       "value": "\"masterList\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 5101,
+      "offset": 5789,
       "length": 6,
       "value": "\".pem\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 5408,
+      "offset": 6096,
       "length": 48,
       "value": "\"Hold your iPhone near an NFC enabled passport.\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "Dictionary",
+      "offset": 6260,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 5835,
+      "offset": 6557,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 5882,
-      "length": 21,
-      "value": "\"items dict: \""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 5902,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 5974,
+      "offset": 6645,
       "length": 11,
       "value": "\"cccdImage\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 6424,
+      "offset": 6746,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 6756,
+      "length": 5,
+      "value": "\"000\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 6789,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 6805,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 6835,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 6848,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 6943,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 6953,
+      "length": 5,
+      "value": "\"106\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 6986,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7002,
+      "length": 17,
+      "value": "\"have_error_scan\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7047,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7060,
+      "length": 38,
+      "value": "\"Have Error when scb, plese try again\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7467,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7481,
+      "length": 13,
+      "value": "\"invalid_url\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7496,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7507,
+      "length": 13,
+      "value": "\"Invalid URL\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7522,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7530,
+      "length": 5,
+      "value": "\"102\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 7593,
       "length": 10,
       "value": "\"username\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 6446,
+      "offset": 7615,
       "length": 10,
       "value": "\"password\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 6716,
-      "length": 24,
-      "value": "\"Data received: \""
+      "kind": "Dictionary",
+      "offset": 7713,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 6739,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 6848,
-      "length": 38,
-      "value": "\"Error: \""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 6885,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 7262,
+      "kind": "BooleanLiteral",
+      "offset": 7801,
       "length": 5,
-      "value": "\"COM\""
+      "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 7272,
-      "length": 2,
-      "value": "\"\""
+      "offset": 8144,
+      "length": 12,
+      "value": "\"code_error\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 7302,
-      "length": 5,
-      "value": "\"DG1\""
+      "offset": 8206,
+      "length": 9,
+      "value": "\"message\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 7312,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 7342,
-      "length": 5,
-      "value": "\"DG2\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 7352,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 7383,
+      "offset": 8268,
       "length": 6,
-      "value": "\"DG13\""
+      "value": "\"code\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 7394,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 7425,
-      "length": 6,
-      "value": "\"DG14\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 7436,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 7467,
-      "length": 6,
-      "value": "\"DG15\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 7478,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 7508,
+      "offset": 8278,
       "length": 5,
-      "value": "\"SOD\""
+      "value": "\"100\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 7518,
+      "offset": 8382,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8398,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 7551,
-      "length": 2,
+      "offset": 8436,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8449,
+      "length": 9,
+      "value": "\"Success\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8494,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8504,
+      "length": 5,
+      "value": "\"000\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8822,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8838,
+      "length": 12,
+      "value": "\"error_data\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8882,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8953,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8963,
+      "length": 5,
+      "value": "\"101\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 9053,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 9069,
+      "length": 15,
+      "value": "\"network_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 9112,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 9179,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 9189,
+      "length": 5,
+      "value": "\"101\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "Dictionary",
+      "offset": 9584,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 9867,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 9883,
+      "length": 16,
+      "value": "\"you_dont_login\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 9923,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 9936,
+      "length": 33,
+      "value": "\"You need login for use features\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 9993,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10003,
+      "length": 5,
+      "value": "\"107\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "Array",
+      "offset": 10118,
+      "length": 67,
+      "value": "[\"COM\", \"DG1\", \"DG2\", \"DG13\", \"DG14\", \"DG15\", \"SOD\", \"centerImage\"]"
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10295,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10311,
+      "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 7891,
+      "offset": 10320,
+      "length": 6,
+      "value": "\"_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10355,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10368,
+      "length": 22,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10377,
+      "length": 2,
+      "value": "\" is required\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10418,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10428,
+      "length": 5,
+      "value": "\"109\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 10931,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 8213,
-      "length": 24,
-      "value": "\"Data received: \""
+      "offset": 11044,
+      "length": 5,
+      "value": "\"COM\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 8236,
+      "offset": 11054,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 8345,
-      "length": 38,
-      "value": "\"Error: \""
+      "offset": 11084,
+      "length": 5,
+      "value": "\"DG1\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 8382,
+      "offset": 11094,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11124,
+      "length": 5,
+      "value": "\"DG2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11134,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11165,
+      "length": 6,
+      "value": "\"DG13\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11176,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11207,
+      "length": 6,
+      "value": "\"DG14\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11218,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11249,
+      "length": 6,
+      "value": "\"DG15\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11260,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11290,
+      "length": 5,
+      "value": "\"SOD\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11300,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11336,
+      "length": 13,
+      "value": "\"centerImage\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11354,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11392,
+      "length": 13,
+      "value": "\"centerImage\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11410,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11447,
+      "length": 13,
+      "value": "\"centerImage\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 11465,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11498,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11710,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12162,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12228,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12294,
+      "length": 14,
+      "value": "\"error_detail\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12365,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12375,
+      "length": 5,
+      "value": "\"100\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12639,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12655,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12697,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12710,
+      "length": 9,
+      "value": "\"Success\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12759,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12769,
+      "length": 5,
+      "value": "\"000\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12814,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 13074,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 13090,
+      "length": 12,
+      "value": "\"error_data\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 13138,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 13213,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 13223,
+      "length": 5,
+      "value": "\"101\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 13378,
+      "length": 12,
+      "value": "\"code_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 13394,
+      "length": 15,
+      "value": "\"network_error\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 13441,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 13512,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 13522,
+      "length": 5,
+      "value": "\"101\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 8643,
+      "offset": 13836,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 8694,
+      "offset": 13887,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 8746,
+      "offset": 13939,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 8961,
+      "offset": 14154,
       "length": 80,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 8970,
+      "offset": 14163,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 8989,
+      "offset": 14182,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 8995,
+      "offset": 14188,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9015,
+      "offset": 14208,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9021,
+      "offset": 14214,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9040,
+      "offset": 14233,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9269,
+      "offset": 14462,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "Dictionary",
-      "offset": 9455,
+      "offset": 14648,
       "length": 443,
       "value": "[(\"0\", \"0\"), (\"1\", \"1\"), (\"2\", \"2\"), (\"3\", \"3\"), (\"4\", \"4\"), (\"5\", \"5\"), (\"6\", \"6\"), (\"7\", \"7\"), (\"8\", \"8\"), (\"9\", \"9\"), (\"<\", \"0\"), (\" \", \"0\"), (\"A\", \"10\"), (\"B\", \"11\"), (\"C\", \"12\"), (\"D\", \"13\"), (\"E\", \"14\"), (\"F\", \"15\"), (\"G\", \"16\"), (\"H\", \"17\"), (\"I\", \"18\"), (\"J\", \"19\"), (\"K\", \"20\"), (\"L\", \"21\"), (\"M\", \"22\"), (\"N\", \"23\"), (\"O\", \"24\"), (\"P\", \"25\"), (\"Q\", \"26\"), (\"R\", \"27\"), (\"S\", \"28\"), (\"T\", \"29\"), (\"U\", \"30\"), (\"V\", \"31\"), (\"W\", \"32\"), (\"X\", \"33\"), (\"Y\", \"34\"), (\"Z\", \"35\")]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 9926,
+      "offset": 15119,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 9944,
+      "offset": 15137,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "Array",
-      "offset": 9980,
+      "offset": 15173,
       "length": 9,
       "value": "[7, 3, 1]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10066,
+      "offset": 15259,
       "length": 6,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10071,
+      "offset": 15264,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 10130,
+      "offset": 15323,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 10230,
+      "offset": 15423,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 10235,
+      "offset": 15428,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 10278,
+      "offset": 15471,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 352,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
-      "kind": "StringLiteral",
-      "offset": 413,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
-      "kind": "StringLiteral",
-      "offset": 683,
+      "offset": 712,
       "length": 4,
       "value": "\"os\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 705,
+      "offset": 734,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 737,
+      "offset": 766,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 763,
+      "offset": 792,
       "length": 15,
       "value": "\"systemVersion\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 807,
+      "offset": 836,
       "length": 13,
       "value": "\"buildNumber\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 973,
       "length": 5,
       "value": "\"COM\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 968,
+      "offset": 997,
       "length": 5,
       "value": "\"DG1\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 992,
+      "offset": 1021,
       "length": 5,
       "value": "\"DG2\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1016,
+      "offset": 1045,
       "length": 6,
       "value": "\"DG13\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1042,
+      "offset": 1071,
       "length": 6,
       "value": "\"DG14\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1068,
+      "offset": 1097,
       "length": 6,
       "value": "\"DG15\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1094,
+      "offset": 1123,
       "length": 5,
       "value": "\"SOD\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1118,
+      "offset": 1147,
       "length": 11,
       "value": "\"leftImage\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1144,
+      "offset": 1173,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
-      "length": 13,
-      "value": "\"centerImage\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
-      "kind": "StringLiteral",
-      "offset": 1200,
+      "offset": 1189,
       "length": 12,
       "value": "\"rightImage\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1228,
+      "offset": 1217,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1244,
+      "offset": 1233,
+      "length": 13,
+      "value": "\"centerImage\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1273,
+      "length": 13,
+      "value": "\"skipCaching\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1313,
       "length": 12,
       "value": "\"deviceInfo\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1561,
+      "offset": 2940,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2940,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3220,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3220,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3586,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3586,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4655,
       "length": 6,
       "value": "\"5F03\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1579,
+      "offset": 4673,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1688,
+      "offset": 4782,
       "length": 6,
       "value": "\"5F03\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1705,
+      "offset": 4799,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1806,
+      "offset": 4900,
       "length": 4,
       "value": "\"5A\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1815,
+      "offset": 4909,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1845,
+      "offset": 4939,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1856,
+      "offset": 4950,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1957,
+      "offset": 5051,
       "length": 6,
       "value": "\"5F28\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 1968,
+      "offset": 5062,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2070,
+      "offset": 5164,
       "length": 4,
       "value": "\"59\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2079,
+      "offset": 5173,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2174,
+      "offset": 5268,
       "length": 6,
       "value": "\"5F57\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2185,
+      "offset": 5279,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2275,
+      "offset": 5369,
       "length": 6,
       "value": "\"5F35\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2286,
+      "offset": 5380,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2381,
+      "offset": 5475,
       "length": 6,
       "value": "\"5F2C\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2392,
+      "offset": 5486,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2481,
+      "offset": 5575,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2509,
+      "offset": 5603,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2520,
+      "offset": 5614,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2614,
+      "offset": 5708,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2634,
+      "offset": 5728,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2709,
+      "offset": 5803,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2720,
+      "offset": 5814,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 2811,
+      "offset": 5905,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 3005,
+      "offset": 6099,
       "length": 6,
       "value": "\"5F1F\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 3016,
+      "offset": 6110,
       "length": 11,
       "value": "\"NOT FOUND\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 3254,
+      "offset": 6348,
       "length": 4,
       "value": "\"<<\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 3297,
+      "offset": 6391,
       "length": 4,
       "value": "\"5B\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 3306,
+      "offset": 6400,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 3335,
+      "offset": 6429,
       "length": 4,
       "value": "\"<<\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 4386,
+      "offset": 7480,
       "length": 4,
       "value": "\"53\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 4395,
+      "offset": 7489,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 4425,
+      "offset": 7519,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 4436,
+      "offset": 7530,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 5164,
+      "offset": 8258,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "Array",
-      "offset": 5354,
+      "offset": 8448,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "Dictionary",
-      "offset": 5577,
+      "offset": 8671,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6042,
+      "offset": 9136,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6120,
+      "offset": 9214,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6187,
+      "offset": 9281,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6257,
+      "offset": 9351,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "Array",
-      "offset": 6333,
+      "offset": 9427,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "Array",
-      "offset": 6406,
+      "offset": 9500,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "Array",
-      "offset": 6468,
+      "offset": 9562,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6598,
+      "offset": 9692,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6852,
+      "offset": 9946,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6883,
+      "offset": 9977,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6929,
+      "offset": 10023,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7206,
+      "offset": 10300,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7250,
+      "offset": 10344,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7299,
+      "offset": 10393,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7835,
+      "offset": 10929,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7930,
+      "offset": 11024,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7960,
+      "offset": 11054,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "Dictionary",
-      "offset": 8052,
+      "offset": 11146,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 8565,
+      "offset": 11659,
       "length": 13,
       "value": "\"AASignature\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 8652,
+      "offset": 11746,
       "length": 13,
       "value": "\"AAChallenge\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 9050,
+      "offset": 12144,
       "length": 58,
       "value": "\"Failed to import Datagroup - \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 9086,
+      "offset": 12180,
       "length": 4,
       "value": "\" from dump - \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 9107,
+      "offset": 12201,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 9653,
+      "offset": 12747,
       "length": 23,
       "value": "\"Active Authentication\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 9717,
+      "offset": 12811,
       "length": 42,
       "value": "\"   challange - \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 9758,
+      "offset": 12852,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 9800,
+      "offset": 12894,
       "length": 42,
       "value": "\"   signature - \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 9841,
+      "offset": 12935,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9921,
+      "offset": 13015,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 10889,
+      "offset": 13983,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 10928,
+      "offset": 14022,
       "length": 4,
       "value": "0xCC"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 10995,
+      "offset": 14089,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 11056,
+      "offset": 14150,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11091,
+      "offset": 14185,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11166,
+      "offset": 14260,
       "length": 4,
       "value": "0xBC"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11172,
+      "offset": 14266,
       "length": 4,
       "value": "0x33"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 11208,
+      "offset": 14302,
       "length": 6,
       "value": "\"SHA1\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11247,
+      "offset": 14341,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11305,
+      "offset": 14399,
       "length": 4,
       "value": "0x34"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 11341,
+      "offset": 14435,
       "length": 8,
       "value": "\"SHA256\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11382,
+      "offset": 14476,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11442,
+      "offset": 14536,
       "length": 4,
       "value": "0x35"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 11478,
+      "offset": 14572,
       "length": 8,
       "value": "\"SHA512\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11519,
+      "offset": 14613,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11579,
+      "offset": 14673,
       "length": 4,
       "value": "0x36"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 11615,
+      "offset": 14709,
       "length": 8,
       "value": "\"SHA384\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11656,
+      "offset": 14750,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11716,
+      "offset": 14810,
       "length": 4,
       "value": "0x38"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 11752,
+      "offset": 14846,
       "length": 8,
       "value": "\"SHA224\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11793,
+      "offset": 14887,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 11908,
+      "offset": 15002,
       "length": 75,
       "value": "\"Error identifying Active Authentication RSA message digest hash algorithm\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 12095,
+      "offset": 15189,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 12649,
+      "offset": 15743,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 12705,
+      "offset": 15799,
       "length": 40,
       "value": "\"Active Authentication (RSA) successful\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 12823,
+      "offset": 15917,
       "length": 74,
       "value": "\"Error verifying Active Authentication RSA signature - Hash doesn't match\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 12985,
+      "offset": 16079,
       "length": 64,
       "value": "\"Error verifying Active Authentication RSA signature - \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 13048,
+      "offset": 16142,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 13153,
+      "offset": 16247,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 13385,
+      "offset": 16479,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 13603,
+      "offset": 16697,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 13655,
+      "offset": 16749,
       "length": 42,
       "value": "\"Active Authentication (ECDSA) successful\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 13767,
+      "offset": 16861,
       "length": 55,
       "value": "\"Error verifying Active Authentication ECDSA signature\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 14674,
+      "offset": 17768,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 15102,
+      "offset": 18196,
       "length": 13,
       "value": "\"AAChallenge\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 15193,
+      "offset": 18287,
       "length": 13,
       "value": "\"AASignature\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 15548,
+      "offset": 18642,
       "length": 6,
       "value": "\"SHA1\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 15625,
+      "offset": 18719,
       "length": 8,
       "value": "\"SHA224\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 15706,
+      "offset": 18800,
       "length": 8,
       "value": "\"SHA256\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 15787,
+      "offset": 18881,
       "length": 8,
       "value": "\"SHA384\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 15868,
+      "offset": 18962,
       "length": 8,
       "value": "\"SHA512\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 15975,
+      "offset": 19069,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 17184,
+      "offset": 20278,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 18036,
+      "offset": 21130,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 18267,
+      "offset": 21361,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 18521,
+      "offset": 21615,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 18642,
+      "offset": 21736,
       "length": 14,
       "value": "\"No SOD found\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 19232,
+      "offset": 22326,
       "length": 34,
       "value": "\"Passport passed SOD Verification\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 19308,
+      "offset": 22402,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 19528,
+      "offset": 22622,
       "length": 14,
       "value": "\"No SOD found\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 19739,
+      "offset": 22833,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 20068,
+      "offset": 23162,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 20346,
+      "offset": 23440,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 20546,
+      "offset": 23640,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 20796,
+      "offset": 23890,
       "length": 31,
       "value": "\"DataGroup \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 20812,
+      "offset": 23906,
       "length": 2,
       "value": "\" is missing!\n\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 21011,
+      "offset": 24105,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 21089,
+      "offset": 24183,
       "length": 86,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 21095,
+      "offset": 24189,
       "length": 7,
       "value": "\" invalid hash:\n  SOD hash:\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 21135,
+      "offset": 24229,
       "length": 1,
       "value": "\"\n   Computed hash:\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 21172,
+      "offset": 24266,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 21200,
+      "offset": 24294,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 21402,
+      "offset": 24496,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 21451,
+      "offset": 24545,
       "length": 25,
       "value": "\"HASH ERRORS - \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 21475,
+      "offset": 24569,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 21612,
+      "offset": 24706,
       "length": 43,
       "value": "\"Passport passed Datagroup Tampering check\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 21692,
+      "offset": 24786,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22161,
+      "offset": 25255,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22190,
+      "offset": 25284,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "Dictionary",
-      "offset": 22243,
+      "offset": 25337,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22308,
+      "offset": 25402,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22526,
+      "offset": 25620,
       "length": 5,
       "value": "\"d=2\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22552,
+      "offset": 25646,
       "length": 8,
       "value": "\"OBJECT\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22599,
+      "offset": 25693,
       "length": 6,
       "value": "\"sha1\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22644,
+      "offset": 25738,
       "length": 6,
       "value": "\"SHA1\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22692,
+      "offset": 25786,
       "length": 8,
       "value": "\"sha224\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22739,
+      "offset": 25833,
       "length": 8,
       "value": "\"SHA224\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22789,
+      "offset": 25883,
       "length": 8,
       "value": "\"sha256\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22836,
+      "offset": 25930,
       "length": 8,
       "value": "\"SHA256\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22886,
+      "offset": 25980,
       "length": 8,
       "value": "\"sha384\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22933,
+      "offset": 26027,
       "length": 8,
       "value": "\"SHA384\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 22983,
+      "offset": 26077,
       "length": 8,
       "value": "\"sha512\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23030,
+      "offset": 26124,
       "length": 8,
       "value": "\"SHA512\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23093,
+      "offset": 26187,
       "length": 5,
       "value": "\"d=3\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23119,
+      "offset": 26213,
       "length": 9,
       "value": "\"INTEGER\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23179,
+      "offset": 26273,
       "length": 9,
       "value": "\"INTEGER\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23313,
+      "offset": 26407,
       "length": 3,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23480,
+      "offset": 26574,
       "length": 5,
       "value": "\"d=3\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23506,
+      "offset": 26600,
       "length": 14,
       "value": "\"OCTET STRING\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23571,
+      "offset": 26665,
       "length": 13,
       "value": "\"[HEX DUMP]:\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23693,
+      "offset": 26787,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 23727,
+      "offset": 26821,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23829,
+      "offset": 26923,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 23931,
+      "offset": 27025,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 24004,
+      "offset": 27098,
       "length": 36,
       "value": "\"Unable to find hash algorythm used\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 24083,
+      "offset": 27177,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 24155,
+      "offset": 27249,
       "length": 26,
       "value": "\"Unable to extract hashes\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 24243,
+      "offset": 27337,
       "length": 41,
       "value": "\"Parse SOD - Using Algo - \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 24283,
+      "offset": 27377,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 24327,
+      "offset": 27421,
       "length": 35,
       "value": "\"      - Hashes     - \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckModel.swift",
       "kind": "StringLiteral",
-      "offset": 24361,
+      "offset": 27455,
       "length": 3,
       "value": "\"\""
     },
@@ -38105,191 +38874,219 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 160,
       "length": 40,
       "value": "\"https:\/\/api.mobile.thq.asia\/user\/login\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 47,
       "value": "\"https:\/\/api.mobile.thq.asia\/validation\/verify\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 291,
       "length": 43,
       "value": "\"https:\/\/api.mobile.thq.asia\/user\/register\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 349,
       "length": 37,
       "value": "\"https:\/\/api.mobile.thq.asia\/user\/me\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 160,
       "length": 40,
       "value": "\"https:\/\/api.mobile.thq.asia\/user\/login\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 47,
       "value": "\"https:\/\/api.mobile.thq.asia\/validation\/verify\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 291,
       "length": 43,
       "value": "\"https:\/\/api.mobile.thq.asia\/user\/register\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 349,
       "length": 37,
       "value": "\"https:\/\/api.mobile.thq.asia\/user\/me\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 642,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "IntegerLiteral",
       "offset": 1050,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 1211,
       "length": 22,
       "value": "\"com.yourdomain.error\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "IntegerLiteral",
       "offset": 1241,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 1282,
       "length": 30,
       "value": "\"Invalid response from server\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 1589,
       "length": 22,
       "value": "\"com.yourdomain.error\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "IntegerLiteral",
       "offset": 1619,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
       "offset": 1660,
       "length": 30,
       "value": "\"No data received from server\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2003,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
-      "offset": 2113,
+      "offset": 2137,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
-      "offset": 2145,
+      "offset": 2169,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
-      "offset": 2185,
+      "offset": 2209,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
+      "kind": "StringLiteral",
+      "offset": 2371,
+      "length": 17,
+      "value": "\"Bearer \""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
+      "kind": "StringLiteral",
+      "offset": 2387,
+      "length": 24,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
+      "kind": "StringLiteral",
+      "offset": 2410,
+      "length": 15,
+      "value": "\"Authorization\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "Array",
-      "offset": 2379,
+      "offset": 2606,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "IntegerLiteral",
-      "offset": 2882,
+      "offset": 3550,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
-      "offset": 3043,
+      "offset": 3711,
       "length": 22,
       "value": "\"com.yourdomain.error\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "IntegerLiteral",
-      "offset": 3073,
+      "offset": 3741,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
-      "offset": 3114,
+      "offset": 3782,
       "length": 30,
       "value": "\"Invalid response from server\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
-      "offset": 3421,
+      "offset": 4451,
       "length": 22,
       "value": "\"com.yourdomain.error\""
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "IntegerLiteral",
-      "offset": 3451,
+      "offset": 4481,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckServices.swift",
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eidCheckServices.swift",
       "kind": "StringLiteral",
-      "offset": 3492,
+      "offset": 4522,
       "length": 30,
       "value": "\"No data received from server\""
     },
@@ -39881,6 +40678,34 @@
       "offset": 11538,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDStorageService.swift",
+      "kind": "StringLiteral",
+      "offset": 163,
+      "length": 21,
+      "value": "\"eidCheck\/user\/login\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDStorageService.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 31,
+      "value": "\"eidCheckSDK\/user\/authen\/token\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDStorageService.swift",
+      "kind": "StringLiteral",
+      "offset": 163,
+      "length": 21,
+      "value": "\"eidCheck\/user\/login\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDStorageService.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 31,
+      "value": "\"eidCheckSDK\/user\/authen\/token\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/SecureMessagingSessionKeyGenerator.swift",
@@ -42756,797 +43581,2288 @@
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
       "offset": 705,
+      "length": 9,
+      "value": "\"iPod5,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 723,
+      "length": 29,
+      "value": "\"iPod touch (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 766,
+      "length": 9,
+      "value": "\"iPod7,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 784,
+      "length": 29,
+      "value": "\"iPod touch (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 827,
+      "length": 9,
+      "value": "\"iPod9,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 845,
+      "length": 29,
+      "value": "\"iPod touch (7th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 888,
+      "length": 11,
+      "value": "\"iPhone3,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 901,
+      "length": 11,
+      "value": "\"iPhone3,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 914,
+      "length": 11,
+      "value": "\"iPhone3,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 934,
+      "length": 10,
+      "value": "\"iPhone 4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 958,
+      "length": 11,
+      "value": "\"iPhone4,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 978,
+      "length": 11,
+      "value": "\"iPhone 4s\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1003,
+      "length": 11,
+      "value": "\"iPhone5,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1016,
+      "length": 11,
+      "value": "\"iPhone5,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1036,
+      "length": 10,
+      "value": "\"iPhone 5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1060,
+      "length": 11,
+      "value": "\"iPhone5,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1073,
+      "length": 11,
+      "value": "\"iPhone5,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1093,
+      "length": 11,
+      "value": "\"iPhone 5c\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1118,
+      "length": 11,
+      "value": "\"iPhone6,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1131,
+      "length": 11,
+      "value": "\"iPhone6,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1151,
+      "length": 11,
+      "value": "\"iPhone 5s\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1176,
+      "length": 11,
+      "value": "\"iPhone7,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1196,
+      "length": 10,
+      "value": "\"iPhone 6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1220,
+      "length": 11,
+      "value": "\"iPhone7,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1240,
+      "length": 15,
+      "value": "\"iPhone 6 Plus\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1269,
+      "length": 11,
+      "value": "\"iPhone8,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1289,
+      "length": 11,
+      "value": "\"iPhone 6s\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1314,
+      "length": 11,
+      "value": "\"iPhone8,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1334,
+      "length": 16,
+      "value": "\"iPhone 6s Plus\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1364,
+      "length": 11,
+      "value": "\"iPhone9,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1377,
+      "length": 11,
+      "value": "\"iPhone9,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1397,
+      "length": 10,
+      "value": "\"iPhone 7\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1421,
+      "length": 11,
+      "value": "\"iPhone9,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1434,
+      "length": 11,
+      "value": "\"iPhone9,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1454,
+      "length": 15,
+      "value": "\"iPhone 7 Plus\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1483,
+      "length": 12,
+      "value": "\"iPhone10,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1497,
+      "length": 12,
+      "value": "\"iPhone10,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1518,
+      "length": 10,
+      "value": "\"iPhone 8\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1542,
+      "length": 12,
+      "value": "\"iPhone10,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1556,
+      "length": 12,
+      "value": "\"iPhone10,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1577,
+      "length": 15,
+      "value": "\"iPhone 8 Plus\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1606,
+      "length": 12,
+      "value": "\"iPhone10,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1620,
+      "length": 12,
+      "value": "\"iPhone10,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1641,
+      "length": 10,
+      "value": "\"iPhone X\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1665,
+      "length": 12,
+      "value": "\"iPhone11,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1686,
+      "length": 11,
+      "value": "\"iPhone XS\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1711,
+      "length": 12,
+      "value": "\"iPhone11,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1725,
+      "length": 12,
+      "value": "\"iPhone11,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1746,
+      "length": 15,
+      "value": "\"iPhone XS Max\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1775,
+      "length": 12,
+      "value": "\"iPhone11,8\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1796,
+      "length": 11,
+      "value": "\"iPhone XR\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1821,
+      "length": 12,
+      "value": "\"iPhone12,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1842,
+      "length": 11,
+      "value": "\"iPhone 11\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1867,
+      "length": 12,
+      "value": "\"iPhone12,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1888,
+      "length": 15,
+      "value": "\"iPhone 11 Pro\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1917,
+      "length": 12,
+      "value": "\"iPhone12,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1938,
+      "length": 19,
+      "value": "\"iPhone 11 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1971,
+      "length": 12,
+      "value": "\"iPhone13,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 1992,
+      "length": 16,
+      "value": "\"iPhone 12 mini\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2022,
+      "length": 12,
+      "value": "\"iPhone13,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2043,
+      "length": 11,
+      "value": "\"iPhone 12\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2068,
+      "length": 12,
+      "value": "\"iPhone13,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2089,
+      "length": 15,
+      "value": "\"iPhone 12 Pro\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2118,
+      "length": 12,
+      "value": "\"iPhone13,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2139,
+      "length": 19,
+      "value": "\"iPhone 12 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2172,
+      "length": 12,
+      "value": "\"iPhone14,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2193,
+      "length": 16,
+      "value": "\"iPhone 13 mini\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2223,
+      "length": 12,
+      "value": "\"iPhone14,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2244,
+      "length": 11,
+      "value": "\"iPhone 13\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2269,
       "length": 12,
       "value": "\"iPhone14,2\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 726,
+      "offset": 2290,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2319,
+      "length": 12,
+      "value": "\"iPhone14,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2340,
+      "length": 19,
+      "value": "\"iPhone 13 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2373,
+      "length": 12,
+      "value": "\"iPhone14,7\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2394,
+      "length": 11,
+      "value": "\"iPhone 14\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2419,
+      "length": 12,
+      "value": "\"iPhone14,8\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2440,
+      "length": 16,
+      "value": "\"iPhone 14 Plus\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2470,
+      "length": 12,
+      "value": "\"iPhone15,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2491,
+      "length": 15,
+      "value": "\"iPhone 14 Pro\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2520,
+      "length": 12,
+      "value": "\"iPhone15,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2541,
+      "length": 19,
+      "value": "\"iPhone 14 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2574,
+      "length": 12,
+      "value": "\"iPhone15,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2595,
+      "length": 11,
+      "value": "\"iPhone 15\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2620,
+      "length": 12,
+      "value": "\"iPhone15,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2641,
+      "length": 16,
+      "value": "\"iPhone 15 Plus\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2671,
+      "length": 12,
+      "value": "\"iPhone16,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2692,
+      "length": 15,
+      "value": "\"iPhone 15 Pro\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2721,
+      "length": 12,
+      "value": "\"iPhone16,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2742,
+      "length": 19,
+      "value": "\"iPhone 15 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2775,
+      "length": 11,
+      "value": "\"iPhone8,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2795,
+      "length": 11,
+      "value": "\"iPhone SE\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2820,
+      "length": 12,
+      "value": "\"iPhone12,8\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2841,
+      "length": 28,
+      "value": "\"iPhone SE (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2883,
+      "length": 12,
+      "value": "\"iPhone14,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2904,
+      "length": 28,
+      "value": "\"iPhone SE (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2946,
+      "length": 9,
+      "value": "\"iPad2,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2957,
+      "length": 9,
+      "value": "\"iPad2,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2968,
+      "length": 9,
+      "value": "\"iPad2,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2979,
+      "length": 9,
+      "value": "\"iPad2,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 2997,
+      "length": 8,
+      "value": "\"iPad 2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3019,
+      "length": 9,
+      "value": "\"iPad3,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3030,
+      "length": 9,
+      "value": "\"iPad3,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3041,
+      "length": 9,
+      "value": "\"iPad3,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3059,
+      "length": 23,
+      "value": "\"iPad (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3096,
+      "length": 9,
+      "value": "\"iPad3,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3107,
+      "length": 9,
+      "value": "\"iPad3,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3118,
+      "length": 9,
+      "value": "\"iPad3,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3136,
+      "length": 23,
+      "value": "\"iPad (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3173,
+      "length": 10,
+      "value": "\"iPad6,11\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3185,
+      "length": 10,
+      "value": "\"iPad6,12\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3204,
+      "length": 23,
+      "value": "\"iPad (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3241,
+      "length": 9,
+      "value": "\"iPad7,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3252,
+      "length": 9,
+      "value": "\"iPad7,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3270,
+      "length": 23,
+      "value": "\"iPad (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3307,
+      "length": 10,
+      "value": "\"iPad7,11\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3319,
+      "length": 10,
+      "value": "\"iPad7,12\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3338,
+      "length": 23,
+      "value": "\"iPad (7th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3375,
+      "length": 10,
+      "value": "\"iPad11,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3387,
+      "length": 10,
+      "value": "\"iPad11,7\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3406,
+      "length": 23,
+      "value": "\"iPad (8th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3443,
+      "length": 10,
+      "value": "\"iPad12,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3455,
+      "length": 10,
+      "value": "\"iPad12,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3474,
+      "length": 23,
+      "value": "\"iPad (9th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3511,
+      "length": 11,
+      "value": "\"iPad13,18\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3524,
+      "length": 11,
+      "value": "\"iPad13,19\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3544,
+      "length": 24,
+      "value": "\"iPad (10th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3582,
+      "length": 9,
+      "value": "\"iPad4,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3593,
+      "length": 9,
+      "value": "\"iPad4,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3604,
+      "length": 9,
+      "value": "\"iPad4,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3622,
+      "length": 10,
+      "value": "\"iPad Air\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3646,
+      "length": 9,
+      "value": "\"iPad5,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3657,
+      "length": 9,
+      "value": "\"iPad5,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3675,
+      "length": 12,
+      "value": "\"iPad Air 2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3701,
+      "length": 10,
+      "value": "\"iPad11,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3713,
+      "length": 10,
+      "value": "\"iPad11,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3732,
+      "length": 27,
+      "value": "\"iPad Air (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3773,
+      "length": 10,
+      "value": "\"iPad13,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3785,
+      "length": 10,
+      "value": "\"iPad13,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3804,
+      "length": 27,
+      "value": "\"iPad Air (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3845,
+      "length": 11,
+      "value": "\"iPad13,16\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3858,
+      "length": 11,
+      "value": "\"iPad13,17\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3878,
+      "length": 27,
+      "value": "\"iPad Air (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3919,
+      "length": 9,
+      "value": "\"iPad2,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3930,
+      "length": 9,
+      "value": "\"iPad2,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3941,
+      "length": 9,
+      "value": "\"iPad2,7\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3959,
+      "length": 11,
+      "value": "\"iPad mini\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3984,
+      "length": 9,
+      "value": "\"iPad4,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 3995,
+      "length": 9,
+      "value": "\"iPad4,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4006,
+      "length": 9,
+      "value": "\"iPad4,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4024,
+      "length": 13,
+      "value": "\"iPad mini 2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4051,
+      "length": 9,
+      "value": "\"iPad4,7\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4062,
+      "length": 9,
+      "value": "\"iPad4,8\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4073,
+      "length": 9,
+      "value": "\"iPad4,9\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4091,
+      "length": 13,
+      "value": "\"iPad mini 3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4118,
+      "length": 9,
+      "value": "\"iPad5,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4129,
+      "length": 9,
+      "value": "\"iPad5,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4147,
+      "length": 13,
+      "value": "\"iPad mini 4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4174,
+      "length": 10,
+      "value": "\"iPad11,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4186,
+      "length": 10,
+      "value": "\"iPad11,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4205,
+      "length": 28,
+      "value": "\"iPad mini (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4247,
+      "length": 10,
+      "value": "\"iPad14,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4259,
+      "length": 10,
+      "value": "\"iPad14,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4278,
+      "length": 28,
+      "value": "\"iPad mini (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4320,
+      "length": 9,
+      "value": "\"iPad6,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4331,
+      "length": 9,
+      "value": "\"iPad6,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4349,
+      "length": 21,
+      "value": "\"iPad Pro (9.7-inch)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4384,
+      "length": 9,
+      "value": "\"iPad7,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4395,
+      "length": 9,
+      "value": "\"iPad7,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4413,
+      "length": 22,
+      "value": "\"iPad Pro (10.5-inch)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4449,
+      "length": 9,
+      "value": "\"iPad8,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4460,
+      "length": 9,
+      "value": "\"iPad8,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4471,
+      "length": 9,
+      "value": "\"iPad8,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4482,
+      "length": 9,
+      "value": "\"iPad8,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4500,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (1st generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4551,
+      "length": 9,
+      "value": "\"iPad8,9\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4562,
+      "length": 10,
+      "value": "\"iPad8,10\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4581,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4632,
+      "length": 10,
+      "value": "\"iPad13,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4644,
+      "length": 10,
+      "value": "\"iPad13,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4656,
+      "length": 10,
+      "value": "\"iPad13,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4668,
+      "length": 10,
+      "value": "\"iPad13,7\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4687,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4738,
+      "length": 10,
+      "value": "\"iPad14,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4750,
+      "length": 10,
+      "value": "\"iPad14,4\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4769,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4820,
+      "length": 9,
+      "value": "\"iPad6,7\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4831,
+      "length": 9,
+      "value": "\"iPad6,8\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4849,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (1st generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4902,
+      "length": 9,
+      "value": "\"iPad7,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4913,
+      "length": 9,
+      "value": "\"iPad7,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4931,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4984,
+      "length": 9,
+      "value": "\"iPad8,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 4995,
+      "length": 9,
+      "value": "\"iPad8,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5006,
+      "length": 9,
+      "value": "\"iPad8,7\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5017,
+      "length": 9,
+      "value": "\"iPad8,8\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5035,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5088,
+      "length": 10,
+      "value": "\"iPad8,11\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5100,
+      "length": 10,
+      "value": "\"iPad8,12\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5119,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5172,
+      "length": 10,
+      "value": "\"iPad13,8\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5184,
+      "length": 10,
+      "value": "\"iPad13,9\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5196,
+      "length": 11,
+      "value": "\"iPad13,10\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5209,
+      "length": 11,
+      "value": "\"iPad13,11\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5229,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5282,
+      "length": 10,
+      "value": "\"iPad14,5\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5294,
+      "length": 10,
+      "value": "\"iPad14,6\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5313,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5366,
+      "length": 12,
+      "value": "\"AppleTV5,3\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5387,
+      "length": 10,
+      "value": "\"Apple TV\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5411,
+      "length": 12,
+      "value": "\"AppleTV6,2\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5432,
+      "length": 13,
+      "value": "\"Apple TV 4K\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5459,
+      "length": 19,
+      "value": "\"AudioAccessory1,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5487,
+      "length": 9,
+      "value": "\"HomePod\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5510,
+      "length": 19,
+      "value": "\"AudioAccessory5,1\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 5538,
+      "length": 14,
+      "value": "\"HomePod mini\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1013,
+      "offset": 5702,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1040,
+      "offset": 5729,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 1045,
+      "offset": 5734,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 1143,
+      "offset": 5832,
       "length": 6,
       "value": "\"%02X\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "Array",
-      "offset": 1877,
+      "offset": 6566,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "BooleanLiteral",
-      "offset": 2026,
+      "offset": 6715,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 2073,
+      "offset": 6762,
       "length": 3,
       "value": "\"[\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 2079,
+      "offset": 6768,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 2158,
+      "offset": 6847,
       "length": 10,
       "value": "\"0x%02x, \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 2228,
+      "offset": 6917,
       "length": 6,
       "value": "\"%02x\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 2280,
+      "offset": 6969,
       "length": 3,
       "value": "\"]\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 2286,
+      "offset": 6975,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 2426,
+      "offset": 7115,
       "length": 6,
       "value": "\"%02x\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 2551,
+      "offset": 7240,
       "length": 6,
       "value": "\"%02X\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2593,
+      "offset": 7282,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2700,
+      "offset": 7389,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 2910,
+      "offset": 7599,
       "length": 5,
       "value": "\"%lx\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3171,
+      "offset": 7860,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3244,
+      "offset": 7933,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3274,
+      "offset": 7963,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 3310,
+      "offset": 7999,
       "length": 6,
       "value": "\"%02x\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 3401,
+      "offset": 8090,
       "length": 6,
       "value": "\"%04x\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "Array",
-      "offset": 3565,
+      "offset": 8254,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3580,
+      "offset": 8269,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3621,
+      "offset": 8310,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3685,
+      "offset": 8374,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3695,
+      "offset": 8384,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3764,
+      "offset": 8453,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3774,
+      "offset": 8463,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3805,
+      "offset": 8494,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3948,
+      "offset": 8637,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "Array",
-      "offset": 4138,
+      "offset": 8827,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4154,
+      "offset": 8843,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4232,
+      "offset": 8921,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "Array",
-      "offset": 4354,
+      "offset": 9043,
       "length": 6,
       "value": "[0x80]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4396,
+      "offset": 9085,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4419,
+      "offset": 9108,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4528,
+      "offset": 9217,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4554,
+      "offset": 9243,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4574,
+      "offset": 9263,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4608,
+      "offset": 9297,
       "length": 4,
       "value": "0x80"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4646,
+      "offset": 9335,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5121,
+      "offset": 9810,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "Array",
-      "offset": 5145,
+      "offset": 9834,
       "length": 17,
       "value": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5203,
+      "offset": 9892,
       "length": 10,
       "value": "\"Calc mac\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5229,
+      "offset": 9918,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5274,
+      "offset": 9963,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5282,
+      "offset": 9971,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5284,
+      "offset": 9973,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5327,
+      "offset": 10016,
       "length": 28,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5333,
+      "offset": 10022,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5354,
+      "offset": 10043,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5398,
+      "offset": 10087,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5402,
+      "offset": 10091,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5467,
+      "offset": 10156,
       "length": 26,
       "value": "\"y\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5473,
+      "offset": 10162,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5492,
+      "offset": 10181,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5542,
+      "offset": 10231,
       "length": 22,
       "value": "\"y: \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5563,
+      "offset": 10252,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5602,
+      "offset": 10291,
       "length": 44,
       "value": "\"bkey: \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5635,
+      "offset": 10324,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5639,
+      "offset": 10328,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5645,
+      "offset": 10334,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5684,
+      "offset": 10373,
       "length": 43,
       "value": "\"akey: \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5717,
+      "offset": 10406,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5721,
+      "offset": 10410,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5726,
+      "offset": 10415,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "Array",
-      "offset": 5753,
+      "offset": 10442,
       "length": 17,
       "value": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5811,
+      "offset": 10500,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5815,
+      "offset": 10504,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5911,
+      "offset": 10600,
       "length": 22,
       "value": "\"b: \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 5932,
+      "offset": 10621,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5976,
+      "offset": 10665,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5980,
+      "offset": 10669,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 6075,
+      "offset": 10764,
       "length": 22,
       "value": "\"a: \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 6096,
+      "offset": 10785,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 6898,
+      "offset": 11587,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "Array",
-      "offset": 6917,
+      "offset": 11606,
       "length": 3,
       "value": "[0]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7064,
+      "offset": 11753,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7109,
+      "offset": 11798,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7465,
+      "offset": 12154,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7470,
+      "offset": 12159,
       "length": 4,
       "value": "0x80"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9041,
+      "offset": 13730,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9046,
+      "offset": 13735,
       "length": 4,
       "value": "0x80"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9087,
+      "offset": 13776,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9093,
+      "offset": 13782,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9114,
+      "offset": 13803,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9120,
+      "offset": 13809,
       "length": 4,
       "value": "0x81"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9161,
+      "offset": 13850,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9167,
+      "offset": 13856,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9188,
+      "offset": 13877,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9194,
+      "offset": 13883,
       "length": 4,
       "value": "0x82"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9241,
+      "offset": 13930,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9245,
+      "offset": 13934,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9276,
+      "offset": 13965,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9718,
+      "offset": 14407,
       "length": 4,
       "value": "0x80"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9766,
+      "offset": 14455,
       "length": 6,
       "value": "\"%02x\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9802,
+      "offset": 14491,
       "length": 4,
       "value": "0x80"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9818,
+      "offset": 14507,
       "length": 4,
       "value": "0xFF"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "Array",
-      "offset": 9840,
+      "offset": 14529,
       "length": 6,
       "value": "[0x81]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9876,
+      "offset": 14565,
       "length": 6,
       "value": "\"%02x\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9911,
+      "offset": 14600,
       "length": 6,
       "value": "0x0100"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9929,
+      "offset": 14618,
       "length": 6,
       "value": "0xFFFF"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "Array",
-      "offset": 9953,
+      "offset": 14642,
       "length": 6,
       "value": "[0x82]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9989,
+      "offset": 14678,
       "length": 6,
       "value": "\"%04x\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "Array",
-      "offset": 10544,
+      "offset": 15233,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10627,
+      "offset": 15316,
       "length": 6,
       "value": "\"sha1\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10700,
+      "offset": 15389,
       "length": 8,
       "value": "\"sha224\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10777,
+      "offset": 15466,
       "length": 8,
       "value": "\"sha256\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10854,
+      "offset": 15543,
       "length": 8,
       "value": "\"sha384\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10931,
+      "offset": 15620,
       "length": 8,
       "value": "\"sha512\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 11799,
+      "offset": 16488,
       "length": 1,
       "value": "0"
     },

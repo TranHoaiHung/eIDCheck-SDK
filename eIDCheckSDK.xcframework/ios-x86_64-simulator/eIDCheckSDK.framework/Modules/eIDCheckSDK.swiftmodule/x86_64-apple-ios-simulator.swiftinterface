@@ -359,7 +359,8 @@ public enum DataGroupId : Swift.Int, Swift.CaseIterable {
 public class eIDCheckClient : ObjectiveC.NSObject {
   @objc override dynamic public init()
   public func scanMRZ(completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
-  public func scanNFC(mrzKey: Swift.String)
+  public func parseMRZkey(cccdNumber: Swift.String, dateOfBirth: Foundation.Date, dateOfExpiry: Foundation.Date, completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
+  public func scanNFC(mrzKey: Swift.String, completionHandler: @escaping ([Swift.String : Swift.String]) -> Swift.Void)
   public func login(username: Swift.String, password: Swift.String, completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   public func logOut()
   public func verifyData(data: [Swift.String : Swift.String], completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
