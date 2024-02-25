@@ -31,11 +31,52 @@ Phiên bản iOS yêu cầu: **>= iOS 14.0**
        
           ![Alt text](/image/config_3.png)
 
-**2. Các functionc chức năng**
+  **2. Các functionc chức năng**
 
-    - **import eIDCheckSDK** 
-    - **Đây là một từ in đậm**
-    
+      - import eIDCheckSDK vào dự án của bạn.
+      
+      - func login(username: String, password: String, completionHandler: @escaping ([String: Any]) -> Void)
+         + username, password: được cung cấp bởi Sale
+         + completionHandler: là callback của func sau khi login thành công.
+             Các trường dữ liệu trả về:
+                + code_error: mã lỗi
+                + message: chú thích của action
+                + code: trạng thái login, với 000 là thành công.
+                
+      - func scanMRZ(completionHandler: @escaping ([String: Any]) -> Void)
+         + fnc này để scan key MRZ trên CCCD.
+         + completionHandler: là callback của func sau khi scan thành công.
+          Các trường dữ liệu trả về:
+                + mrzKey: là key mrz đọc được từ CCCD.
+
+      - func parseMRZkey(cccdNumber: String, dateOfBirth: Date, dateOfExpiry: Date , completionHandler: @escaping ([String: Any]) -> Void)
+        + Ngoài việc scan mặt sau của CCCD để lấy MRZKEY, bạn cũng có thể sử dụng fnc này để nhập MRZKey của user.
+        + cccdNumber: 9 số cuối của CCCD 
+        + dateOfBirth: Ngày sinh trên CCCD
+        + dateOfExpiry: Ngày hết hạn trên CCCD
+        + completionHandler: là callback của func sau khi parseMRZkey thành công.
+           Các trường dữ liệu trả về:
+                + code_error: mã lỗi
+                + message: chú thích của action
+                + code: trạng thái login, với 000 là thành công.
+
+      - func scanNFC(mrzKey: String, completionHandler: @escaping ([String: String]) -> Void) 
+        + Func này dùng để scan NFC trên CCCD với mrzKey là bắt buộc
+        + completionHandler: là callback của func sau khi scanNFC thành công, 
+            Các trường dữ liệu trả về sau khi scan thành công:
+                + code_error: mã lỗi
+                + message: chú thích của action
+                + code: trạng thái login, với 000 là thành công.
+                + cccdImage:  String - base64
+                + DG1: String
+                + DG2: String
+                + SOD: String
+                + COM: String
+                + DG13: String
+                + DG14: String
+                + DG15: String
+
+        
 
    
     
