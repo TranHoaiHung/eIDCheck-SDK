@@ -76,6 +76,7 @@ Phiên bản iOS yêu cầu: **>= iOS 14.0**
                 + DG14: String
                 + DG15: String
 
+    - func verifyData(data: [String: String], completionHandler: @escaping ([String: Any]) -> Void)
         
 
    
