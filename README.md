@@ -77,6 +77,19 @@ Phiên bản iOS yêu cầu: **>= iOS 14.0**
                 + DG15: String
 
     - func verifyData(data: [String: String], completionHandler: @escaping ([String: Any]) -> Void)
+      + Func này thực hiện xác thực dữ liệu với hệ thống
+      + Các tham số yêu cầu:
+                + DG1: String
+                + DG2: String
+                + SOD: String
+                + COM: String
+                + DG13: String
+                + DG14: String
+                + DG15: String
+                + centerImage: Base64 // ảnh chụp chính giữa khuôn mặt
+                + skipCaching: Bool // true cho production
+      + completionHandler: func trả về kết qủa sau khi xác thực thành công, dữ liệu dạng JSON
+      
         
 
    
