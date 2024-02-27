@@ -94,7 +94,7 @@ Phiên bản iOS yêu cầu: **>= iOS 14.0**
       
   **3.Các mã lỗi**
   
-  | Code | Mã tả |
+  | Code | Mô tả |
 |---|---|
 | 000 | Thành công |
 | 100 | Lỗi reponse (chi tiết message kèm theo) |
