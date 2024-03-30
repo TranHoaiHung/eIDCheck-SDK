@@ -31,7 +31,7 @@ Phiên bản iOS yêu cầu: **>= iOS 14.0**
        
           ![Alt text](/image/config_3.png)
 
-  **2. Các functionc chức năng**
+  **2.Các functionc chức năng**
 
       - import eIDCheckSDK vào dự án của bạn.
       
@@ -76,7 +76,34 @@ Phiên bản iOS yêu cầu: **>= iOS 14.0**
                 + DG14: String
                 + DG15: String
 
-        
+    - func verifyData(data: [String: String], completionHandler: @escaping ([String: Any]) -> Void)
+      + Func này thực hiện xác thực dữ liệu với hệ thống
+      + Các tham số yêu cầu:
+                + DG1: String
+                + DG2: String
+                + SOD: String
+                + COM: String
+                + DG13: String
+                + DG14: String
+                + DG15: String
+                + centerImage: Base64 // ảnh chụp chính giữa khuôn mặt
+                + skipCaching: Bool // true cho production
+      + completionHandler: func trả về kết qủa sau khi xác thực thành công, dữ liệu dạng JSON
+      
+
+      
+  **3.Các mã lỗi**
+  
+  | Code | Mô tả |
+|---|---|
+| 000 | Thành công |
+| 100 | Lỗi reponse (chi tiết message kèm theo) |
+| 101 | Lỗi format data từ API (chi tiết message kèm theo) |
+| 104 | Lỗi sai number CCCD (chi tiết message kèm theo) |
+| 106 | Lỗi Scan NFC, vui lòng scan lại |
+| 107 | Chưa login vào hệ thống |
+| 109 | Thiếu các field yêu cầu (chi tiết message kèm theo)  |
+
 
    
     
