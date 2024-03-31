@@ -6,46 +6,20 @@
 //
 
 import SwiftUI
-import 
-import QKMRZParser
-import QKMRZScanner
-import UniformTypeIdentifiers
-import Combine
+import eIDCheckSDK
 import OSLog
-import Vision
-import UIKit
-import AVFoundation
-import Vision
-//validateDataIDCard, scanBehindIdCard, scanChipIdCard, captureFace
+
+
 
 struct ContentView: View {
-
-    @State var mrz: String = ""
-    @State var dataNFC: [String: String] = [:]
-    @State private var showModal = false
-    @State private var faceDetected = false
     private var eIDCheck = eIDCheckClient()
-
-    var requests = [VNRequest]()
-
-    mutating func setupVision() {
-        let faceDetectionRequest = VNDetectFaceRectanglesRequest(completionHandler: self.handleFaces)
-        requests = [faceDetectionRequest]
-    }
-
-    func handleFaces(request: VNRequest, error: Error?) {
-        guard let results = request.results as? [VNFaceObservation] else { return }
-
-        // Xử lý kết quả phát hiện khuôn mặt
-    }
 
     
     var body: some View {
         VStack {
             Spacer()
             Button(action: {
-                       // Hành động khi button được nhấp
-                self.eIDCheck.login(username: "0967884005", password: "12345678") { data in
+                self.eIDCheck.login(username: "0967884005", password: "xxxx") { data in
                     switch data {
                     case .success(let message, let data):
                         Logger().debug("message: ==> \(message)")
@@ -61,7 +35,6 @@ struct ContentView: View {
                 }
     
                    }) {
-                       // Nội dung hiển thị của button
                        Text("Login")
                            .padding()
                            .background(Color.pink)
@@ -83,7 +56,6 @@ struct ContentView: View {
                     }
 
                 }) {
-                    // Nội dung hiển thị của button
                     Text("Scan MRZ!")
                         .padding()
                         .background(Color.green)
@@ -103,7 +75,6 @@ struct ContentView: View {
                         }
                     }
                 }) {
-                    // Nội dung hiển thị của button
                     Text("Read CCCD!")
                         .padding()
                         .background(Color.blue)
@@ -124,15 +95,12 @@ struct ContentView: View {
                     }
                 }
             }) {
-                // Nội dung hiển thị của button
+          
                 Text("Scan Face")
                     .padding()
                     .background(Color.cyan)
                     .foregroundColor(.white)
                     .cornerRadius(8)
-            }
-            .sheet(isPresented: $showModal) {
-                
             }
             
             
@@ -146,9 +114,9 @@ struct ContentView: View {
                     case .success(let message, let data):
                         Logger().debug("message: ==> \(message)")
                         print("Citizen ID Card: ==> ", data)
-                        if let payload = data as? CitizenIdCard { // Kiểm tra kiểu và casting
+                        if let payload = data as? CitizenIdCard {
                             print("Citizen ID Card payload:", payload)
-                            // Xử lý dữ liệu payload ở đây
+                    
                         } else {
                             print("Dữ liệu không đúng định dạng mong muốn.")
                         }
@@ -158,7 +126,7 @@ struct ContentView: View {
                 }
                 
             }) {
-                // Nội dung hiển thị của button
+               
                 Text("Verify NFC!")
                     .padding()
                     .background(Color.blue)

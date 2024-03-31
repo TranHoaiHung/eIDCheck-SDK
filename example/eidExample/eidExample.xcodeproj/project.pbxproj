@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D7D295A572EBBBDF00F6CD /* Pods_eidExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFDC7F1D2611EC76FBEB50C /* Pods_eidExample.framework */; };
 		9815AA012BB9A5D40000B0EF /* eidExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815AA002BB9A5D40000B0EF /* eidExampleApp.swift */; };
 		9815AA032BB9A5D40000B0EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815AA022BB9A5D40000B0EF /* ContentView.swift */; };
 		9815AA052BB9A5D50000B0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9815AA042BB9A5D50000B0EF /* Assets.xcassets */; };
 		9815AA082BB9A5D50000B0EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9815AA072BB9A5D50000B0EF /* Preview Assets.xcassets */; };
-		FAA57CC3F60D008AF01CD320 /* Pods_eidExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF021CFA46737EC69802647 /* Pods_eidExample.framework */; };
+		98F5B7522BB9CA8B00641AD4 /* QKMRZParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F5B7512BB9CA8B00641AD4 /* QKMRZParser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2FF021CFA46737EC69802647 /* Pods_eidExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eidExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62A2E64234D9587F427F52AA /* Pods-eidExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eidExample.debug.xcconfig"; path = "Target Support Files/Pods-eidExample/Pods-eidExample.debug.xcconfig"; sourceTree = "<group>"; };
+		7FFDC7F1D2611EC76FBEB50C /* Pods_eidExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eidExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C2BBF1FAAC10D1AC07ED31 /* Pods-eidExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eidExample.debug.xcconfig"; path = "Target Support Files/Pods-eidExample/Pods-eidExample.debug.xcconfig"; sourceTree = "<group>"; };
 		9815A9FD2BB9A5D40000B0EF /* eidExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eidExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9815AA002BB9A5D40000B0EF /* eidExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eidExampleApp.swift; sourceTree = "<group>"; };
 		9815AA022BB9A5D40000B0EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,7 +25,9 @@
 		9815AA072BB9A5D50000B0EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98F5B7482BB9B95600641AD4 /* eidExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eidExample.entitlements; sourceTree = "<group>"; };
 		98F5B7492BB9B9B000641AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		EB6F1676037DFC4B203CF56F /* Pods-eidExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eidExample.release.xcconfig"; path = "Target Support Files/Pods-eidExample/Pods-eidExample.release.xcconfig"; sourceTree = "<group>"; };
+		98F5B74A2BB9C9FE00641AD4 /* eIDCheckSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = eIDCheckSDK.xcframework; path = Pods/eIDCheckSDK/eIDCheckSDK.xcframework; sourceTree = "<group>"; };
+		98F5B7512BB9CA8B00641AD4 /* QKMRZParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QKMRZParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8783584A43843EB830C89F8 /* Pods-eidExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eidExample.release.xcconfig"; path = "Target Support Files/Pods-eidExample/Pods-eidExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,20 +35,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA57CC3F60D008AF01CD320 /* Pods_eidExample.framework in Frameworks */,
+				02D7D295A572EBBBDF00F6CD /* Pods_eidExample.framework in Frameworks */,
+				98F5B7522BB9CA8B00641AD4 /* QKMRZParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58F0D60AD077CFF0DED36D22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98F5B7512BB9CA8B00641AD4 /* QKMRZParser.framework */,
+				98F5B74A2BB9C9FE00641AD4 /* eIDCheckSDK.xcframework */,
+				7FFDC7F1D2611EC76FBEB50C /* Pods_eidExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9815A9F42BB9A5D40000B0EF = {
 			isa = PBXGroup;
 			children = (
 				9815A9FF2BB9A5D40000B0EF /* eidExample */,
 				9815A9FE2BB9A5D40000B0EF /* Products */,
 				AC48F2549E05C4D96227C41C /* Pods */,
-				D541E4B6F5E01499A0753CF9 /* Frameworks */,
+				58F0D60AD077CFF0DED36D22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,18 +95,10 @@
 		AC48F2549E05C4D96227C41C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				62A2E64234D9587F427F52AA /* Pods-eidExample.debug.xcconfig */,
-				EB6F1676037DFC4B203CF56F /* Pods-eidExample.release.xcconfig */,
+				88C2BBF1FAAC10D1AC07ED31 /* Pods-eidExample.debug.xcconfig */,
+				B8783584A43843EB830C89F8 /* Pods-eidExample.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		D541E4B6F5E01499A0753CF9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2FF021CFA46737EC69802647 /* Pods_eidExample.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,11 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9815AA0B2BB9A5D50000B0EF /* Build configuration list for PBXNativeTarget "eidExample" */;
 			buildPhases = (
-				8E4CD46100D491BFB7639007 /* [CP] Check Pods Manifest.lock */,
+				8B0DCB1038ABE5C637FD6254 /* [CP] Check Pods Manifest.lock */,
 				9815A9F92BB9A5D40000B0EF /* Sources */,
 				9815A9FA2BB9A5D40000B0EF /* Frameworks */,
 				9815A9FB2BB9A5D40000B0EF /* Resources */,
-				8B620EB447F2E8FAF14CC097 /* [CP] Embed Pods Frameworks */,
+				CA2C44181101728553B4BEEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,24 +169,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8B620EB447F2E8FAF14CC097 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-eidExample/Pods-eidExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-eidExample/Pods-eidExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eidExample/Pods-eidExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E4CD46100D491BFB7639007 /* [CP] Check Pods Manifest.lock */ = {
+		8B0DCB1038ABE5C637FD6254 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,6 +189,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA2C44181101728553B4BEEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eidExample/Pods-eidExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eidExample/Pods-eidExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eidExample/Pods-eidExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -338,7 +344,7 @@
 		};
 		9815AA0C2BB9A5D50000B0EF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62A2E64234D9587F427F52AA /* Pods-eidExample.debug.xcconfig */;
+			baseConfigurationReference = 88C2BBF1FAAC10D1AC07ED31 /* Pods-eidExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,6 +354,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"eidExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 53D452FDFN;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = eidExample/Info.plist;
 				INFOPLIST_KEY_NFCReaderUsageDescription = 1.0;
@@ -373,7 +380,7 @@
 		};
 		9815AA0D2BB9A5D50000B0EF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB6F1676037DFC4B203CF56F /* Pods-eidExample.release.xcconfig */;
+			baseConfigurationReference = B8783584A43843EB830C89F8 /* Pods-eidExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -383,6 +390,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"eidExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 53D452FDFN;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = eidExample/Info.plist;
 				INFOPLIST_KEY_NFCReaderUsageDescription = 1.0;
