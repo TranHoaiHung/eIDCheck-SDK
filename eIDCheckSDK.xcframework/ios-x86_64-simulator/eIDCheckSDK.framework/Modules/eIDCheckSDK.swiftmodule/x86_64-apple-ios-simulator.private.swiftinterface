@@ -370,8 +370,20 @@ public class eIDCheckClient : ObjectiveC.NSObject {
   public func login(username: Swift.String, password: Swift.String, completionHandler: @escaping (eIDCheckSDK.ScanResult) -> Swift.Void)
   public func checkIsLogined() -> Swift.Bool
   public func logOut()
-  public func verifyData(completionHandler: @escaping (eIDCheckSDK.ScanResult) -> Swift.Void)
+  public func validateDataIDCard(completionHandler: @escaping (eIDCheckSDK.ScanResult) -> Swift.Void)
   @objc deinit
+}
+public struct UserEidCheckInfo : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CitizenIdCard : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserDetail : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum PassportAuthenticationStatus {
   case notDone
