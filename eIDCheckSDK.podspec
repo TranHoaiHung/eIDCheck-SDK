@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = "eIDCheckSDK"
-    spec.version      = "1.0.2"
+    spec.version      = "1.0.3"
     spec.summary      = "eIDCheckSDK is the most accurate sdk that reads/scans NFC information."
     spec.description  = <<-DESC
                         eIDCheckSDK is an SDK widely used in reading NFC information from electronic chips, in the fastest and most accurate way.
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
     spec.source       = { :git => 'https://github.com/TranHoaiHung/eIDCheck-SDK.git', :tag => spec.version.to_s }
     spec.source_files = 'eIDCheckSDK.xcframework/**/eIDCheckSDK.framework/Headers/*.h'
     spec.public_header_files =  'eIDCheckSDK.xcframework/**/eIDCheckSDK.framework/Headers/*.h'
-
+    spec.ios.vendored_frameworks = 'eIDCheckSDK.xcframework'
     spec.ios.deployment_target = '14.0' 
     spec.swift_version = "5.0"
 
