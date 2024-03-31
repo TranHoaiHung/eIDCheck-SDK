@@ -853,6 +853,10 @@ public class NotImplementedDG : eIDCheckSDK.DataGroup {
   }
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class eIDCheckResourceAccessor {
+  public static func pemData() -> Foundation.URL?
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
 public class OpenSSLUtils {
   public static func getOpenSSLError() -> Swift.String

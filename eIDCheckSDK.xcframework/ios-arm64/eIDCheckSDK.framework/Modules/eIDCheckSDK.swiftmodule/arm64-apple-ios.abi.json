@@ -20029,6 +20029,62 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "eIDCheckResourceAccessor",
+        "printedName": "eIDCheckResourceAccessor",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "pemData",
+            "printedName": "pemData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11eIDCheckSDK01eA16ResourceAccessorC7pemData10Foundation3URLVSgyFZ",
+            "mangledName": "$s11eIDCheckSDK01eA16ResourceAccessorC7pemData10Foundation3URLVSgyFZ",
+            "moduleName": "eIDCheckSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11eIDCheckSDK01eA16ResourceAccessorC",
+        "mangledName": "$s11eIDCheckSDK01eA16ResourceAccessorC",
+        "moduleName": "eIDCheckSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "eIDCheckSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "OSLog",
         "printedName": "OSLog",
@@ -31250,539 +31306,532 @@
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 8759,
-      "length": 12,
-      "value": "\"masterList\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 8788,
-      "length": 6,
-      "value": "\".pem\""
-    },
-    {
-      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
-      "kind": "StringLiteral",
-      "offset": 9139,
+      "offset": 9140,
       "length": 46,
       "value": "\"Giữ điện thoại của bạn gần CCCD\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9380,
+      "offset": 9393,
       "length": 52,
       "value": "\"Đang đọc dữ liệu.....\n\n\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9431,
+      "offset": 9444,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9544,
+      "offset": 9565,
       "length": 28,
       "value": "\"dataGroup ==> \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9571,
+      "offset": 9592,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9700,
+      "offset": 9729,
       "length": 70,
       "value": "\"Đang đọc \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9743,
+      "offset": 9772,
       "length": 5,
       "value": "\".....\n\n\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9769,
+      "offset": 9798,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 9962,
+      "offset": 9999,
       "length": 36,
       "value": "\"Thẻ không được tìm thấy.\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10109,
+      "offset": 10146,
       "length": 81,
       "value": "\"Nhiều hơn 1 thẻ được tìm thấy, vui lòng chỉ sử dụng 1 thẻ.\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10297,
+      "offset": 10334,
       "length": 42,
       "value": "\"Lỗi kết nối, vui lòng thử lại\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10444,
+      "offset": 10481,
       "length": 45,
       "value": "\"Thông tin phía sau chip không hợp lệ\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10629,
+      "offset": 10666,
       "length": 97,
       "value": "\"Xin lỗi, đã có lỗi xảy ra khi đọc dữ liệu. \""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10703,
+      "offset": 10740,
       "length": 1,
       "value": "\" - (0x\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10715,
+      "offset": 10752,
       "length": 1,
       "value": "\", 0x\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10725,
+      "offset": 10762,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10803,
+      "offset": 10840,
       "length": 75,
       "value": "\"Xin lỗi, đã có lỗi xảy ra khi đọc chip. Vui lòng thử lại\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 10984,
+      "offset": 11033,
       "length": 33,
       "value": "\"Đang xử lý dữ liệu.....\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 11091,
+      "offset": 11148,
       "length": 31,
       "value": "\"Scan dữ liệu thành công\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 11518,
+      "offset": 11609,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 11792,
+      "offset": 11895,
       "length": 29,
       "value": "\"read_data_form_chip_success\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 11922,
+      "offset": 12033,
       "length": 44,
       "value": "\"Have_error_when_read_chip_please_try_again\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 12200,
+      "offset": 12339,
+      "length": 37,
+      "value": "\"error_bundle_please_connect_support\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
+      "kind": "StringLiteral",
+      "offset": 12458,
       "length": 14,
       "value": "\"please_login\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 12469,
+      "offset": 12727,
       "length": 18,
       "value": "\"please_try_again\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 12545,
+      "offset": 12803,
       "length": 10,
       "value": "\"username\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 12567,
+      "offset": 12825,
       "length": 10,
       "value": "\"password\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 12708,
+      "offset": 12966,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 13394,
+      "offset": 13652,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 13973,
+      "offset": 14231,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 14003,
+      "offset": 14261,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 14452,
+      "offset": 14710,
       "length": 23,
       "value": "\"please_behind_id_card\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 14598,
+      "offset": 14856,
       "length": 26,
       "value": "\"please_capture_your_face\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 14693,
+      "offset": 14951,
       "length": 5,
       "value": "\"COM\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 14703,
+      "offset": 14961,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 14769,
+      "offset": 15027,
       "length": 23,
       "value": "\"please_scan_your_chip\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15237,
+      "offset": 15495,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15393,
+      "offset": 15651,
       "length": 5,
       "value": "\"COM\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15403,
+      "offset": 15661,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15468,
+      "offset": 15726,
       "length": 5,
       "value": "\"DG1\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15478,
+      "offset": 15736,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15543,
+      "offset": 15801,
       "length": 5,
       "value": "\"DG2\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15553,
+      "offset": 15811,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15619,
+      "offset": 15877,
       "length": 6,
       "value": "\"DG13\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15630,
+      "offset": 15888,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15696,
+      "offset": 15954,
       "length": 6,
       "value": "\"DG14\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15707,
+      "offset": 15965,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15773,
+      "offset": 16031,
       "length": 6,
       "value": "\"DG15\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15784,
+      "offset": 16042,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15849,
+      "offset": 16107,
       "length": 5,
       "value": "\"SOD\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 15859,
+      "offset": 16117,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 16082,
+      "offset": 16340,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 16318,
+      "offset": 16576,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 16873,
+      "offset": 17131,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 17460,
+      "offset": 17718,
       "length": 14,
       "value": "\"please_login\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 17650,
+      "offset": 17908,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 17701,
+      "offset": 17959,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 17753,
+      "offset": 18011,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 17968,
+      "offset": 18226,
       "length": 80,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 17977,
+      "offset": 18235,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 17996,
+      "offset": 18254,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 18002,
+      "offset": 18260,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 18022,
+      "offset": 18280,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 18028,
+      "offset": 18286,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 18047,
+      "offset": 18305,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 18214,
+      "offset": 18472,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "Dictionary",
-      "offset": 18400,
+      "offset": 18658,
       "length": 443,
       "value": "[(\"0\", \"0\"), (\"1\", \"1\"), (\"2\", \"2\"), (\"3\", \"3\"), (\"4\", \"4\"), (\"5\", \"5\"), (\"6\", \"6\"), (\"7\", \"7\"), (\"8\", \"8\"), (\"9\", \"9\"), (\"<\", \"0\"), (\" \", \"0\"), (\"A\", \"10\"), (\"B\", \"11\"), (\"C\", \"12\"), (\"D\", \"13\"), (\"E\", \"14\"), (\"F\", \"15\"), (\"G\", \"16\"), (\"H\", \"17\"), (\"I\", \"18\"), (\"J\", \"19\"), (\"K\", \"20\"), (\"L\", \"21\"), (\"M\", \"22\"), (\"N\", \"23\"), (\"O\", \"24\"), (\"P\", \"25\"), (\"Q\", \"26\"), (\"R\", \"27\"), (\"S\", \"28\"), (\"T\", \"29\"), (\"U\", \"30\"), (\"V\", \"31\"), (\"W\", \"32\"), (\"X\", \"33\"), (\"Y\", \"34\"), (\"Z\", \"35\")]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 18871,
+      "offset": 19129,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 18889,
+      "offset": 19147,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "Array",
-      "offset": 18925,
+      "offset": 19183,
       "length": 9,
       "value": "[7, 3, 1]"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 19011,
+      "offset": 19269,
       "length": 6,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "StringLiteral",
-      "offset": 19016,
+      "offset": 19274,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 19075,
+      "offset": 19333,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 19175,
+      "offset": 19433,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 19180,
+      "offset": 19438,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/eIDCheckClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 19223,
+      "offset": 19481,
       "length": 2,
       "value": "10"
     },
@@ -36531,6 +36580,20 @@
       "offset": 2617,
       "length": 1,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckResourceAccessor.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 12,
+      "value": "\"masterList\""
+    },
+    {
+      "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/eIDCheckResourceAccessor.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 6,
+      "value": "\".pem\""
     },
     {
       "filePath": "\/Users\/hsolutions\/Documents\/CODING\/SDK\/eIDCheckSDK\/Sources\/eIDCheckSDK\/MRZParser\/Private\/OCRCorrector.swift",
