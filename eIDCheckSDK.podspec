@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = "eIDCheckSDK"
-    spec.version      = "1.0.1"
+    spec.version      = "1.0.2"
     spec.summary      = "eIDCheckSDK is the most accurate sdk that reads/scans NFC information."
     spec.description  = <<-DESC
                         eIDCheckSDK is an SDK widely used in reading NFC information from electronic chips, in the fastest and most accurate way.

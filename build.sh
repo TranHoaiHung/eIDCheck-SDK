@@ -1,5 +1,5 @@
 git tag -a $1 -m "Release version $1"
-git push origin --tags 
+git push origin --tags $1
 
 pod lib lint --allow-warnings --no-clean --verbose
 

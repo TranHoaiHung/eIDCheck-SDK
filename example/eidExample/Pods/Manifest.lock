@@ -1,5 +1,5 @@
 PODS:
-  - eIDCheckSDK (1.0.0):
+  - eIDCheckSDK (1.0.1):
     - OpenSSL-Universal (= 1.1.1100)
     - QKMRZScanner (~> 3.0.0)
   - OpenSSL-Universal (1.1.1100)
@@ -21,12 +21,12 @@ SPEC REPOS:
     - SwiftyTesseract
 
 SPEC CHECKSUMS:
-  eIDCheckSDK: 60ca8edd4eae87e79b19ac3f563cd0ec9b40eb2e
+  eIDCheckSDK: 21679d20e0ecca604f04e69fea383b63324098d4
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   QKMRZParser: 6b419b6f07d6bff6b50429b97de10846dc902c29
   QKMRZScanner: cf2348fd6ce441e758328da4adf231ef2b51d769
   SwiftyTesseract: 1f3d96668ae92dc2208d9842c8a59bea9fad2cbb
 
-PODFILE CHECKSUM: d11538da0f92dc49e168aa5b9ad5775bce44be9e
+PODFILE CHECKSUM: 45317885ea57bcc4cb32e087afae81077770b084
 
 COCOAPODS: 1.14.3
