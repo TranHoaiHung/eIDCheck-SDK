@@ -11,14 +11,18 @@
 		9815AA032BB9A5D40000B0EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815AA022BB9A5D40000B0EF /* ContentView.swift */; };
 		9815AA052BB9A5D50000B0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9815AA042BB9A5D50000B0EF /* Assets.xcassets */; };
 		9815AA082BB9A5D50000B0EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9815AA072BB9A5D50000B0EF /* Preview Assets.xcassets */; };
+		F67BCEF3BAEB7975AB0F90E9 /* Pods_eidExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B679474C0FB6DCEB6BE9AD5E /* Pods_eidExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33E970697D3BE75F06C00E48 /* Pods-eidExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eidExample.release.xcconfig"; path = "Target Support Files/Pods-eidExample/Pods-eidExample.release.xcconfig"; sourceTree = "<group>"; };
+		70170F8EA924F4A562870482 /* Pods-eidExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eidExample.debug.xcconfig"; path = "Target Support Files/Pods-eidExample/Pods-eidExample.debug.xcconfig"; sourceTree = "<group>"; };
 		9815A9FD2BB9A5D40000B0EF /* eidExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eidExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9815AA002BB9A5D40000B0EF /* eidExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eidExampleApp.swift; sourceTree = "<group>"; };
 		9815AA022BB9A5D40000B0EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9815AA042BB9A5D50000B0EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9815AA072BB9A5D50000B0EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B679474C0FB6DCEB6BE9AD5E /* Pods_eidExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eidExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67BCEF3BAEB7975AB0F90E9 /* Pods_eidExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1178A3811FE42EF3F736C32C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B679474C0FB6DCEB6BE9AD5E /* Pods_eidExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9815A9F42BB9A5D40000B0EF = {
 			isa = PBXGroup;
 			children = (
 				9815A9FF2BB9A5D40000B0EF /* eidExample */,
 				9815A9FE2BB9A5D40000B0EF /* Products */,
+				AC48F2549E05C4D96227C41C /* Pods */,
+				1178A3811FE42EF3F736C32C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AC48F2549E05C4D96227C41C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70170F8EA924F4A562870482 /* Pods-eidExample.debug.xcconfig */,
+				33E970697D3BE75F06C00E48 /* Pods-eidExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9815AA0B2BB9A5D50000B0EF /* Build configuration list for PBXNativeTarget "eidExample" */;
 			buildPhases = (
+				84366C6A40777A895B0B56CE /* [CP] Check Pods Manifest.lock */,
 				9815A9F92BB9A5D40000B0EF /* Sources */,
 				9815A9FA2BB9A5D40000B0EF /* Frameworks */,
 				9815A9FB2BB9A5D40000B0EF /* Resources */,
+				8DE0780796D9D7B370ABF65C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84366C6A40777A895B0B56CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eidExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DE0780796D9D7B370ABF65C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eidExample/Pods-eidExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eidExample/Pods-eidExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eidExample/Pods-eidExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9815A9F92BB9A5D40000B0EF /* Sources */ = {
@@ -266,6 +335,7 @@
 		};
 		9815AA0C2BB9A5D50000B0EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70170F8EA924F4A562870482 /* Pods-eidExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +365,7 @@
 		};
 		9815AA0D2BB9A5D50000B0EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E970697D3BE75F06C00E48 /* Pods-eidExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

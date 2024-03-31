@@ -1,0 +1,6 @@
+framework module Pods_eidExample {
+  umbrella header "Pods-eidExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
