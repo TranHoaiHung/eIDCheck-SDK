@@ -45,6 +45,7 @@ Phiên bản iOS yêu cầu: **>= iOS 14.0**
           ![Alt text](/image/setup_1.png)
 
  ## 2. Chức năng
+ [Source Demo](example/eidExample)
 ```swift
 import eIDCheckSDK // import SDK vào dự án của bạn
 
