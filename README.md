@@ -8,7 +8,7 @@ Link tải thư viện tại CoacaPods: [eIDCheckSDK](https://cocoapods.org/pods
 Phiên bản iOS yêu cầu: **>= iOS 14.0**
 
 
-**1. Cấu hình**
+## 1. Cấu hình
    * **Cấu hình Identifier**:
      - Trong **Identifier** của dự án, tích chọn vào các quyền sau:
        
@@ -24,87 +24,114 @@ Phiên bản iOS yêu cầu: **>= iOS 14.0**
      - Khai báo các thông tin sau trong tệp **Info.plit**:
 
        ![Alt text](/image/config_2.png)
+
+       Các giá trị khai báo trong tệp **Info.plit**:
+      ```xml
+      <dict>
+          <key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+          <array>
+              <string>A0000002471001</string>
+              <string>A0000002472001</string>
+              <string>00000000000000</string>
+          </array>
+      </dict>
+      ```
+
        
-   * **Thêm chứng chỉ vào dự án**:
-     - Các bước tạo cấu hình chứng chỉ tại: [Hướng dẫn tạo chứng chỉ](/scripts/README.md)
+   * **Cấu hình run debug**:
+     - Đặt giá trị của **User Script Sandboxing:  No**
      - Kết quả
        
-          ![Alt text](/image/config_3.png)
+          ![Alt text](/image/setup_1.png)
 
-  **2.Các functionc chức năng**
+ ## 2. Chức năng
+```swift
+import eIDCheckSDK // import SDK vào dự án của bạn
 
-      - import eIDCheckSDK vào dự án của bạn.
+private var eIDCheck = eIDCheckClient() // khởi tạo SDK 
+
+// Gọi func login để login vào hệ thống. Thống tin đăng nhập vui kết nối với sales
+ self.eIDCheck.login(username: "Phone or Mail", password: "your_password") { data in
+                    switch data {
+                    case .success(let message, let data):
+                          // dữ liệu trả về sau khi login thành công:
+                        if let data = data as? UserEidCheckInfo {
+                          // Object UserEidCheckInfo chứa thông tin của user đươc trả về từ hệ thống.
+                            print(data)
+                        } 
+                    case .failure(message: let message):
+                        // dữ liệu trả về sau khi login thất bại, kèm thông tin trong message
+                        print(message)
+                    }
+                }
+
+// Gọi func dùng để logout khỏi hệ thống
+ self.eIDCheck.logOut()
+
+// Gọi func để đọc dữ liệu MRZ(mặt sau của CCCD)         
+self.eIDCheck.scanBehindIdCard  { result in
+                        switch result {
+                        case .success(let message):
+                            // Thông tin 
+                            print("message: ==> \(message)")
+                        case .failure(let message):
+                            print("message: ==> \(message)")
+                        }
+                    }
+
+// Gọi func để bắt đầu đọc dữ liệu NFC trên CCCD
+ self.eIDCheck.scanChipIdCard { result in
+                        switch result {
+                        case .success(let message, _):
+                            print("message: ==> \(message)")
+                        case .failure(let message):
+                             print("message: ==> \(message)")
+                        }
+                    }
+
+// Gọi func để bắt đầu chụp hình khuôn mặt của bạn
+ self.eIDCheck.captureFace {  result in
+                    switch result {
+                    case .success(let message, let data):
+                        // data dạng String, ảnh khuôn mặt sau khi hệ thống tự nhận diện từ ảnh bạn chụp
+                        print("message: ==> \(message)")
+                    case .failure(let message):
+                        print("message: ==> \(message)")
+                    }
+                }
+
+// Gọi func để bắt đầu xác nhận dữ liệu với hệ thống
+self.eIDCheck.validateDataIDCard { result in
+                    switch result {
+                    case .success(let message, let data):
+                         print("message: ==> \(message)")
+                        // Thông tin dữ liệu sau khi đọc được từ CCCD và đã xác minh với hệ thống
+                        if let payload = data as? CitizenIdCard {
+                            print("Citizen ID Card payload:", payload)
+                        } 
+                    case .failure(let message):
+                         print("message: ==> \(message)")
+                    }
+                }
+
+```
       
-      - func login(username: String, password: String, completionHandler: @escaping ([String: Any]) -> Void)
-         + username, password: được cung cấp bởi Sale
-         + completionHandler: là callback của func sau khi login thành công.
-             Các trường dữ liệu trả về:
-                + code_error: mã lỗi
-                + message: chú thích của action
-                + code: trạng thái login, với 000 là thành công.
-                
-      - func scanMRZ(completionHandler: @escaping ([String: Any]) -> Void)
-         + fnc này để scan key MRZ trên CCCD.
-         + completionHandler: là callback của func sau khi scan thành công.
-          Các trường dữ liệu trả về:
-                + mrzKey: là key mrz đọc được từ CCCD.
+## 3.Hình ảnh minh hoạ UI của SDK
 
-      - func parseMRZkey(cccdNumber: String, dateOfBirth: Date, dateOfExpiry: Date , completionHandler: @escaping ([String: Any]) -> Void)
-        + Ngoài việc scan mặt sau của CCCD để lấy MRZKEY, bạn cũng có thể sử dụng fnc này để nhập MRZKey của user.
-        + cccdNumber: 9 số cuối của CCCD 
-        + dateOfBirth: Ngày sinh trên CCCD
-        + dateOfExpiry: Ngày hết hạn trên CCCD
-        + completionHandler: là callback của func sau khi parseMRZkey thành công.
-           Các trường dữ liệu trả về:
-                + code_error: mã lỗi
-                + message: chú thích của action
-                + code: trạng thái login, với 000 là thành công.
+  - **Hình ảnh UI của SDK khi gọi func scanBehindIdCard:**
+    
+    ![Alt text](/image/scanBehindIdCard.jpeg)
 
-      - func scanNFC(mrzKey: String, completionHandler: @escaping ([String: String]) -> Void) 
-        + Func này dùng để scan NFC trên CCCD với mrzKey là bắt buộc
-        + completionHandler: là callback của func sau khi scanNFC thành công, 
-            Các trường dữ liệu trả về sau khi scan thành công:
-                + code_error: mã lỗi
-                + message: chú thích của action
-                + code: trạng thái login, với 000 là thành công.
-                + cccdImage:  String - base64
-                + DG1: String
-                + DG2: String
-                + SOD: String
-                + COM: String
-                + DG13: String
-                + DG14: String
-                + DG15: String
-
-    - func verifyData(data: [String: String], completionHandler: @escaping ([String: Any]) -> Void)
-      + Func này thực hiện xác thực dữ liệu với hệ thống
-      + Các tham số yêu cầu:
-                + DG1: String
-                + DG2: String
-                + SOD: String
-                + COM: String
-                + DG13: String
-                + DG14: String
-                + DG15: String
-                + centerImage: Base64 // ảnh chụp chính giữa khuôn mặt
-                + skipCaching: Bool // true cho production
-      + completionHandler: func trả về kết qủa sau khi xác thực thành công, dữ liệu dạng JSON
-      
-
-      
-  **3.Các mã lỗi**
-  
-  | Code | Mô tả |
-|---|---|
-| 000 | Thành công |
-| 100 | Lỗi reponse (chi tiết message kèm theo) |
-| 101 | Lỗi format data từ API (chi tiết message kèm theo) |
-| 104 | Lỗi sai number CCCD (chi tiết message kèm theo) |
-| 106 | Lỗi Scan NFC, vui lòng scan lại |
-| 107 | Chưa login vào hệ thống |
-| 109 | Thiếu các field yêu cầu (chi tiết message kèm theo)  |
+    
+  - **Hình ảnh UI của SDK khi gọi func scanChipIdCard:**
+    
+    ![Alt text](/image/scanChipIdCard.jpeg)
+    
 
 
+  - **Hình ảnh UI của SDK khi gọi func captureFace:**
+    
+    ![Alt text](/image/captureFace.jpeg) 
    
     
        
