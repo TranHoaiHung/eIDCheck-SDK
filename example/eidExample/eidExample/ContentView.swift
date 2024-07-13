@@ -19,7 +19,7 @@ struct ContentView: View {
         VStack {
             Spacer()
             Button(action: {
-                self.eIDCheck.login(username: "0967884005", password: "xxxx") { data in
+                self.eIDCheck.login(username: "0967884005", password: "12345678") { data in
                     switch data {
                     case .success(let message, let data):
                         Logger().debug("message: ==> \(message)")

@@ -8,7 +8,6 @@ import CommonCrypto
 import CoreNFC
 import CryptoKit
 import CryptoTokenKit
-import DeveloperToolsSupport
 import Foundation
 import OSLog
 import OpenSSL
@@ -524,6 +523,7 @@ public class eIDCheckModel {
 }
 @objc @available(iOS 15, *)
 public class eIDCheckSDKReader : ObjectiveC.NSObject {
+  public var readerSession: CoreNFC.NFCTagReaderSession?
   public var passiveAuthenticationUsesOpenSSL: Swift.Bool
   public init(masterListURL: Foundation.URL? = nil)
   public func setMasterListURL(_ masterListURL: Foundation.URL)
@@ -831,6 +831,10 @@ public struct MRZResult : Swift.Hashable {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class eIDCheckResourceAccessor {
+  public static func pemData() -> Foundation.URL?
+  @objc deinit
+}
 @available(iOS 13, macOS 10.15, *)
 public enum NFCViewDisplayMessage {
   case requestPresentPassport
@@ -851,10 +855,6 @@ public class NotImplementedDG : eIDCheckSDK.DataGroup {
   override public var datagroupType: eIDCheckSDK.DataGroupId {
     get
   }
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class eIDCheckResourceAccessor {
-  public static func pemData() -> Foundation.URL?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)

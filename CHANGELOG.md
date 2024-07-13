@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.6
+- Fix spam button scan
+
+
 ## 1.0.4
 - Update Readme
 - Add source demo 
