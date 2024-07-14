@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jSO2F4pxRw7HqrBOF3xU6xUMf/o=
+		vWjIPOW6CoL/SQiivq8wXoSqMME=
 		</data>
 		<key>Modules/eIDCheckSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		vuRPHtM+Wt4vqR62F1/Ta6k2qfY=
+		XYMv4OqnESulhEsJKHXej8F2CME=
 		</data>
 		<key>Modules/eIDCheckSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lpop9Kr0J0O4xreEsXNMfhvWi7o=
+		FJ3OmVzlslMmd4dDSYV5zYvs8HQ=
 		</data>
 		<key>Modules/eIDCheckSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/eIDCheckSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3hwpQOBE3YLUhGk6RD1zc9LfmfI=
+		kvEW+3rDVBKkJ2vFQJAJEWkFYVc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -80,14 +80,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			InnFc8+sa5TfC5ei1CrDxX83xvl5ggyjV0ZvpAKmzO8=
+			bX98+qanyFlaB/XShj+h/FeXQdBvspA16QHEYkF9D5c=
 			</data>
 		</dict>
 		<key>Modules/eIDCheckSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vAkIXwGbKNejXgTd3Xv3Vdl6Wy52J8MOzzgIku35CoU=
+			ey9+sA04BZwzJewjTMes5LHM67+vL/tbSB95WzlQwTk=
 			</data>
 		</dict>
 		<key>Modules/eIDCheckSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -115,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fpgo4zA3nsqfxhROBNeuP0Da2cRKLBLuZ9g6BWFg3jQ=
+			1z+qCW4jxHy8M4X/moA68W/Z/gz8gfy4EFe0HDLJkOk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

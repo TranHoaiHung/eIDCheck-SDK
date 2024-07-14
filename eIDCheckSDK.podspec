@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = "eIDCheckSDK"
-    spec.version      = "1.0.9"
+    spec.version      = "1.0.10"
     spec.summary      = "eIDCheckSDK is the most accurate sdk that reads/scans NFC information."
     spec.description  = <<-DESC
                         eIDCheckSDK is an SDK widely used in reading NFC information from electronic chips, in the fastest and most accurate way.
@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
     spec.ios.deployment_target = '13.0' 
     spec.swift_version = "5.0"
 
-    # spec.dependency "QKMRZScanner", '~> 3.0.0'
+    spec.dependency "QKMRZScanner", '~> 3.0.0'
     spec.dependency "OpenSSL-Universal", '1.1.1100'
 
     spec.xcconfig          = { 'OTHER_LDFLAGS' => '-weak_framework CryptoKit -weak_framework CoreNFC -weak_framework CryptoTokenKit' }

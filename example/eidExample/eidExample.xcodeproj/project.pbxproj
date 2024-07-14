@@ -12,7 +12,6 @@
 		9815AA032BB9A5D40000B0EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815AA022BB9A5D40000B0EF /* ContentView.swift */; };
 		9815AA052BB9A5D50000B0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9815AA042BB9A5D50000B0EF /* Assets.xcassets */; };
 		9815AA082BB9A5D50000B0EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9815AA072BB9A5D50000B0EF /* Preview Assets.xcassets */; };
-		98F5B7522BB9CA8B00641AD4 /* QKMRZParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F5B7512BB9CA8B00641AD4 /* QKMRZParser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		98F5B7482BB9B95600641AD4 /* eidExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eidExample.entitlements; sourceTree = "<group>"; };
 		98F5B7492BB9B9B000641AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		98F5B74A2BB9C9FE00641AD4 /* eIDCheckSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = eIDCheckSDK.xcframework; path = Pods/eIDCheckSDK/eIDCheckSDK.xcframework; sourceTree = "<group>"; };
-		98F5B7512BB9CA8B00641AD4 /* QKMRZParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QKMRZParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8783584A43843EB830C89F8 /* Pods-eidExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eidExample.release.xcconfig"; path = "Target Support Files/Pods-eidExample/Pods-eidExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,7 +34,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				02D7D295A572EBBBDF00F6CD /* Pods_eidExample.framework in Frameworks */,
-				98F5B7522BB9CA8B00641AD4 /* QKMRZParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +43,6 @@
 		58F0D60AD077CFF0DED36D22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98F5B7512BB9CA8B00641AD4 /* QKMRZParser.framework */,
 				98F5B74A2BB9C9FE00641AD4 /* eIDCheckSDK.xcframework */,
 				7FFDC7F1D2611EC76FBEB50C /* Pods_eidExample.framework */,
 			);

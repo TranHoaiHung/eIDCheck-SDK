@@ -6,6 +6,6 @@ target 'eidExample' do
   use_frameworks!
 
   # Pods for eidExample
-  pod 'eIDCheckSDK', '~> 1.0.3'
+  pod 'eIDCheckSDK', '~> 1.0.8'
   # pod 'eIDCheckSDK'
 end
