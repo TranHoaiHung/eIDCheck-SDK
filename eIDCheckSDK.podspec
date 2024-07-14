@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = "eIDCheckSDK"
-    spec.version      = "1.0.6"
+    spec.version      = "1.0.7"
     spec.summary      = "eIDCheckSDK is the most accurate sdk that reads/scans NFC information."
     spec.description  = <<-DESC
                         eIDCheckSDK is an SDK widely used in reading NFC information from electronic chips, in the fastest and most accurate way.
@@ -8,12 +8,12 @@ Pod::Spec.new do |spec|
     spec.homepage     = "https://plugins.gradle.org/u/TranHoaiHung"
     spec.license      = { :type => "MIT", :file => "LICENSE" }
     spec.author       = { "Tran Hoai Hung" => "eidcheckvn@gmail.com" }
-    spec.platform     = :ios, "14.0"
+    spec.platform     = :ios, "10.0"
     spec.source       = { :git => 'https://github.com/TranHoaiHung/eIDCheck-SDK.git', :tag => spec.version.to_s }
     spec.source_files = 'eIDCheckSDK.xcframework/**/eIDCheckSDK.framework/Headers/*.h'
     spec.public_header_files =  'eIDCheckSDK.xcframework/**/eIDCheckSDK.framework/Headers/*.h'
     spec.ios.vendored_frameworks = 'eIDCheckSDK.xcframework'
-    spec.ios.deployment_target = '14.0' 
+    spec.ios.deployment_target = '10.0' 
     spec.swift_version = "5.0"
 
     spec.dependency "QKMRZScanner", '~> 3.0.0'
